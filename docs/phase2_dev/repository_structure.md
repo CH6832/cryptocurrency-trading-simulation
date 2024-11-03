@@ -1,38 +1,42 @@
 # Repository Structure
 
 .
-├── /backend                                      # Backend codebase
-│   ├── /app                                      # Main FastAPI application folder
-│   │   ├── __init__.py
-│   │   ├── main.py                               # Entry point for the FastAPI application
-│   │   ├── api                                   # Directory for API endpoints
-│   │   │   ├── __init__.py
-│   │   │   ├── users.py                          # User-related API endpoints
-│   │   │   ├── trades.py                         # Trade-related API endpoints
-│   │   │   └── portfolio.py                       # Portfolio-related API endpoints
-│   │   ├── models                                # Data models for MongoDB
-│   │   │   ├── __init__.py
-│   │   │   ├── user.py                           # User model
-│   │   │   ├── trade.py                          # Trade model
-│   │   │   └── portfolio.py                       # Portfolio model
-│   │   ├── services                              # Business logic services
-│   │   │   ├── __init__.py
-│   │   │   ├── auth.py                           # Authentication services
-│   │   │   ├── trading.py                        # Trading logic services
-│   │   │   └── notifications.py                    # Notification service logic
-│   │   ├── database                              # Database connection and setup
-│   │   │   ├── __init__.py
-│   │   │   └── mongodb.py                        # MongoDB connection settings
-│   │   ├── notifications                          # Notification service setup
-│   │   ├── config.py                             # Configuration settings (e.g., environment variables)
-│   │   ├── middlewares                            # Custom middleware (if any)
-│   │   ├── tests                                 # Unit tests for backend
-│   │   │   ├── __init__.py
-│   │   │   ├── test_users.py                     # Tests for user endpoints
-│   │   │   ├── test_trades.py                     # Tests for trade functionality
-│   │   │   └── test_portfolio.py                   # Tests for portfolio functionality
-│   ├── requirements.txt                          # Python dependencies
-│   └── README.md                                 # Backend documentation
+├── /backend                                       # Backend codebase for the crypto trading simulation
+│   ├── /app                                       # Main FastAPI application folder
+│   │   ├── __init__.py                            # Initializes the FastAPI application package
+│   │   ├── main.py                                # Entry point for the FastAPI application, creating the app instance and setting up routes
+│   │   ├── api                                    # Directory for API endpoint definitions
+│   │   │   ├── __init__.py                        # Initializes the API module
+│   │   │   ├── users.py                           # User-related API endpoints (registration, login, profile management)
+│   │   │   ├── trades.py                          # Trade-related API endpoints (trade execution, trade history)
+│   │   │   └── portfolio.py                       # Portfolio-related API endpoints (view and analyze portfolio)
+│   │   ├── models                                 # Data models for MongoDB
+│   │   │   ├── __init__.py                        # Initializes the models module
+│   │   │   ├── user.py                            # User model schema (e.g., user ID, name, email)
+│   │   │   ├── trade.py                           # Trade model schema (e.g., trade ID, asset type, amount, price, timestamp)
+│   │   │   └── portfolio.py                       # Portfolio model schema (e.g., assets held, total value)
+│   │   ├── services                               # Core business logic for the application
+│   │   │   ├── __init__.py                        # Initializes the services module
+│   │   │   ├── auth.py                            # Authentication services (e.g., login, registration, JWT token generation)
+│   │   │   ├── trading.py                         # Trading logic services (e.g., trade execution, order validation)
+│   │   │   └── notifications.py                   # Notification service logic (e.g., alerts for trade status, price movements)
+│   │   ├── database                               # Database connection setup for MongoDB
+│   │   │   ├── __init__.py                        # Initializes the database module
+│   │   │   └── mongodb.py                         # MongoDB connection configuration and helper functions
+│   │   ├── notifications                          # Real-time notifications and WebSocket integration
+│   │   │   ├── __init__.py                        # Initializes the notifications module
+│   │   │   └── websocket_manager.py               # Manages WebSocket connections for live updates
+│   │   ├── config.py                              # Configuration settings (e.g., environment variables)
+│   │   ├── middlewares                            # Middleware definitions for additional request processing
+│   │   │   ├── __init__.py                        # Initializes middleware module
+│   │   │   └── logging.py                         # Custom middleware for request logging and error tracking
+│   │   ├── tests                                  # Unit tests for backend components
+│   │   │   ├── __init__.py                        # Initializes the tests module
+│   │   │   ├── test_users.py                      # Tests for user-related endpoints (registration, login)
+│   │   │   ├── test_trades.py                     # Tests for trade execution functionality
+│   │   │   └── test_portfolio.py                  # Tests for portfolio-related endpoints (view and manage portfolio)
+│   ├── requirements.txt                           # List of Python dependencies (if not using Poetry)
+│   └── README.md                                  # Backend documentation overview
 │
 ├── /frontend                                     # Frontend codebase
 │   ├── /public                                   # Public assets

@@ -59,6 +59,10 @@ To run the project locally, follow these steps:
      npm start
      ```
 
+## Impressions
+
+![App Overview](./docs/images/App.png)
+
 ## License
 
-This project is licensed under the [MIT License](/LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
