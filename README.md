@@ -1,4 +1,4 @@
-# Crypto Trading Simulation
+# Cryptocurrency Trading Simulation
 
 ## Project Overview
 
