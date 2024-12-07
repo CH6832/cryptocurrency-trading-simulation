@@ -206,3 +206,37 @@ footer {
     padding: 20px; /* Reduce padding on smaller screens */
   }
 }
+
+/* src/App.css or src/styles.css */
+.navbar {
+  font-family: 'Arial', sans-serif; /* Classic, modern font */
+  font-size: 0.85rem; /* Smaller font size for navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Reduced brand font size */
+  color: #007bff !important; /* Modern primary color */
+}
+
+.nav-link {
+  font-size: 0.85rem; /* Smaller font size for links */
+  font-weight: 500; /* Lighter weight for links */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Hover effect with a darker color */
+}
+
+button {
+  font-weight: bold; /* Bold for the button text */
+  border-radius: 30px; /* Rounded button corners */
+}
+
+/* Button specific for smaller size */
+.btn-sm {
+  font-size: 0.85rem; /* Smaller button font size */
+  padding: 0.25rem 0.5rem; /* Slightly smaller padding */
+}
+

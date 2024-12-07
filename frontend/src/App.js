@@ -13,6 +13,7 @@ import React from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import UserManagement from './components/UserManagement';
+import AllPrices from './components/AllPrices';
 import PriceChart from './components/PriceChart';
 import ExecuteTrade from './components/ExecuteTrade';
 import PortfolioOverview from './components/PortfolioOverview';
@@ -22,13 +23,12 @@ import './App.css';
 function App() {
     return (
         <div className="dashboard">
-            <UserManagement />
             <Header />
-            <Navigation />
+            <UserManagement />
+            <AllPrices />
             <PriceChart />
             <ExecuteTrade />
             <PortfolioOverview />
-            <button>Logout</button>
             <Footer />
         </div>
     );
