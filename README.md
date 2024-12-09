@@ -1,4 +1,4 @@
-# Crypto Trading Simulation Backend
+# Crypto Trading Simulation
 
 This is the backend service for the Crypto Trading Simulation application. It is built with FastAPI and provides RESTful APIs for user management, trading, portfolio management, and other core functionalities. The backend connects to a MongoDB database and serves data and operations to the frontend application.
 
